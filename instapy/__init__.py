@@ -1,3 +1,10 @@
 # flake8: noqa
-from .settings import Settings
+
+# __variables__ with double-quoted values will be available in setup.py
+__version__ = "0.6.8"
+
 from .instapy import InstaPy
+from .util import smart_run
+from .settings import Settings
+from .file_manager import set_workspace
+from .file_manager import get_workspace
